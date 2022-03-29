@@ -22,7 +22,7 @@
         <b-col>
           <b-img
             fluid
-            src="../css/images/foto.png"
+            src="../css/images/foto.PNG"
             alt="Image 3"
             class="imagem-banner"
           ></b-img>
@@ -58,7 +58,7 @@
         <b-col>
           <b-img
             fluid
-            src="../css/images/foto5.jpg"
+            src="../css/images/foto5.JPG"
             alt="Image 3"
             class="imagem-banner"
           ></b-img>
