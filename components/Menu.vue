@@ -1,19 +1,14 @@
 <template>
-  <div>
+  <div class="wrapper">
     <header class="cabecalho">
       <div class="container">
         <img class="logoHeader" src="../css/images/logo_header.png" href="/" />
-        <ul class="linksHeader">
-          <li class="linkHeader">
-            <a href="#presenca"> Confirme sua presença </a>
-          </li>
-          <li class="linkHeader">
-            <a href="#local"> Localização do evento </a>
-          </li>
-          <li class="linkHeader">
-            <a href="/contato"> Lista de presentes </a>
-          </li>
-        </ul>
+        <!-- <b-nav small align="right" class="menu-wrapper">
+          <b-nav-item active>Active</b-nav-item>
+          <b-nav-item>Confirme sua presença</b-nav-item>
+          <b-nav-item> Localização do evento</b-nav-item>
+          <b-nav-item>Lista de presentes</b-nav-item>
+        </b-nav> -->
       </div>
     </header>
   </div>
@@ -24,18 +19,21 @@ export default {};
 </script>
 
 <style>
+/* .wrapper {
+  position: sticky;
+} */
+
 .cabecalho {
   position: sticky;
   top: 0;
   right: 0;
   background: white;
+  width: 100%;
 }
 
 .container {
-  margin: 0 50px;
   display: flex;
   max-height: 100px;
-  justify-content: space-between;
   /* border: 1px solid red; */
 }
 
@@ -44,31 +42,12 @@ export default {};
   object-fit: contain;
 }
 
-.linksHeader {
-  display: flex;
-  justify-content: space-between;
-
-  /* border: 1px solid green; */
-}
-
-.linkHeader {
-  list-style: none;
+.menu-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
-
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 22px;
-  margin: 0 10px;
-
-  pointer-events: all;
-
-  /* border: 1px solid blue; */
 }
 
 a {
-  text-decoration: none;
   color: black;
 }
 </style>

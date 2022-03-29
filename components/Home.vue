@@ -4,7 +4,6 @@
     <b-img
       src="../css/images/casal.jpeg"
       fluid
-      alt="Responsive image"
       rounded="circle"
       class="image-casal"
     />

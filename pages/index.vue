@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Menu />
+    <!-- <Menu /> -->
     <Banner />
     <Home />
   </div>
@@ -14,6 +14,7 @@ export default {
 
 <style>
 body {
-  background: rgb(226, 149, 226);
+  /* background-image: url("../css/images/fundo.jpg"); */
+  font-family: "josefin", sans-serif;
 }
 </style>
