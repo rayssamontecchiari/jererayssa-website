@@ -71,15 +71,11 @@ export default {
 
 <style lang="css">
 .form {
-  height: 100vh;
-
   text-align: center;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px;
+  padding: 40px 10px 0;
 }
 .btn-submit,
 .btn-submit:after {
