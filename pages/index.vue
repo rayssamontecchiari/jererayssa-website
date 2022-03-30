@@ -2,6 +2,7 @@
   <div>
     <Banner />
     <Data-local />
+    <Form />
   </div>
 </template>
 

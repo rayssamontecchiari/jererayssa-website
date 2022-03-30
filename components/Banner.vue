@@ -27,6 +27,14 @@
             class="imagem-banner"
           ></b-img>
         </b-col>
+        <b-col>
+          <b-img
+            fluid
+            src="../css/images/foto1.jpg"
+            alt="Image 2"
+            class="imagem-banner"
+          ></b-img>
+        </b-col>
       </b-row>
       <b-row>
         <b-col>
@@ -49,6 +57,14 @@
           <b-img
             fluid
             src="../css/images/foto4.jpg"
+            alt="Image 3"
+            class="imagem-banner"
+          ></b-img>
+        </b-col>
+        <b-col>
+          <b-img
+            fluid
+            src="../css/images/foto3.jpg"
             alt="Image 3"
             class="imagem-banner"
           ></b-img>
@@ -79,28 +95,10 @@
             class="imagem-banner"
           ></b-img>
         </b-col>
-      </b-row>
-      <b-row>
         <b-col>
           <b-img
             fluid
-            src="../css/images/foto2.jpg"
-            alt="Image 3"
-            class="imagem-banner"
-          ></b-img>
-        </b-col>
-        <b-col>
-          <b-img
-            fluid
-            src="../css/images/foto3.jpg"
-            alt="Image 3"
-            class="imagem-banner"
-          ></b-img>
-        </b-col>
-        <b-col>
-          <b-img
-            fluid
-            src="../css/images/foto4.jpg"
+            src="../css/images/foto6.jpg"
             alt="Image 3"
             class="imagem-banner"
           ></b-img>
@@ -127,6 +125,40 @@
           <b-img
             fluid
             src="../css/images/foto4.jpg"
+            alt="Image 3"
+            class="imagem-banner"
+          ></b-img>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col>
+          <b-img
+            fluid
+            src="../css/images/foto2.jpg"
+            alt="Image 3"
+            class="imagem-banner"
+          ></b-img>
+        </b-col>
+        <b-col>
+          <b-img
+            fluid
+            src="../css/images/foto3.jpg"
+            alt="Image 3"
+            class="imagem-banner"
+          ></b-img>
+        </b-col>
+        <b-col>
+          <b-img
+            fluid
+            src="../css/images/foto4.jpg"
+            alt="Image 3"
+            class="imagem-banner"
+          ></b-img>
+        </b-col>
+        <b-col>
+          <b-img
+            fluid
+            src="../css/images/foto3.jpg"
             alt="Image 3"
             class="imagem-banner"
           ></b-img>

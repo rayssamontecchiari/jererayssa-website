@@ -1,79 +1,108 @@
 <template>
-    <div class="form">
-        <b-form-group
-            label-for="name"
-        >
-            <b-form-input
-                id="name"
-                v-model="form.name"
-                type="text"
-                placeholder="Seu nome"
-                required
-            />
-        </b-form-group>
+  <div class="form">
+    <h2>Confirme sua presença</h2>
 
-        <b-form-group
-            label-for="idade"
-        >
-            <b-form-input
-                id="idade"
-                v-model="form.age"
-                type="text"
-                placeholder="Sua idade"
-                required
-            />
-        </b-form-group>
+    <b-form-group label-for="name" class="name">
+      <b-form-input
+        id="name"
+        v-model="form.name"
+        type="text"
+        placeholder="Seu nome"
+        required
+      />
+    </b-form-group>
 
-        <b-button 
-            type="submit" 
-            variant="secondary"
-            class="btn-submit"
-            @click="onSubmit"
-        >
-            Confirmar
-        </b-button>
-        
-        <b-button 
-            type="reset" 
-            variant="warning"
-            @click="onReset"
-        >
-            Limpar
-        </b-button>
+    <div class="check">
+      <b-form-checkbox v-model="checked" name="check-button" switch>
+        Sim, estarei lá
+      </b-form-checkbox>
     </div>
+
+    <div id="novo-nome"></div>
+
+    <b-button
+      type=""
+      variant="secondary"
+      class="btn-outros"
+      @click="otherPeople"
+    >
+      Confirmar outra presença
+    </b-button>
+
+    <b-button
+      type="submit"
+      variant="secondary"
+      class="btn-submit"
+      @click="onSubmit"
+    >
+      Confirmar
+    </b-button>
+  </div>
 </template>
 <script>
+// const novoNome = this.$el.querySelector("#novo-nome").value;
+
 export default {
-    data() {
-        return {
-            form: {
-                name: '',
-                age: '',
-            }
-        }
+  data() {
+    return {
+      form: {
+        name: "",
+        age: "",
+        checked: true,
+      },
+      checked: false,
+    };
+  },
+  methods: {
+    onSubmit() {
+      console.log("On Submit");
+      this.form.name = "";
+      this.form.age = "";
+      this.form.checked = "";
     },
-    methods: {
-        onSubmit() {
-            console.log("On Submit")   
-            this.form.name = ''
-            this.form.age = '' 
-        },
-        onReset() {
-            console.log("On reset")    
-        }
-    }
-    
-}
+    otherPeople() {
+      // const inputname = "novo nome";
+      // novoNome.innerHTML = inputname;
+      // renderizar campo de nome outra vez
+    },
+  },
+};
 </script>
 
 <style lang="css">
-    .form {
-        max-width: 80%;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .btn-submit, .btn-submit:after {
-        background-color: #333;
-        outline: none;
-    }
+.form {
+  height: 100vh;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+.btn-submit,
+.btn-submit:after {
+  background-color: #482763;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.check {
+  margin-bottom: 10px;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #877199;
+  background-color: #877199;
+}
+
+.btn-outros {
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: #877199;
+  outline: none;
+  border: none;
+}
 </style>
