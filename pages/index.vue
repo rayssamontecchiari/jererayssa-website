@@ -1,6 +1,7 @@
 <template>
   <div>
     <Banner />
+    <Data-local />
   </div>
 </template>
 
