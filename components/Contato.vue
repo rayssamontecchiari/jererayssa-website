@@ -1,13 +1,15 @@
 <template>
   <div class="contato-wrapper">
     <h2>Fale conosco:</h2>
-    <div>
-      <p>Rayssa</p>
-      <a href="tel:22997861096"> (22)99786-1096 </a>
-    </div>
-    <div>
-      <p>Jeremias</p>
-      <a href="tel:22998096470"> (22)99809-6470 </a>
+    <div class="contatos-wrapper">
+      <div>
+        <p class="nome">Rayssa</p>
+        <a href="tel:22997861096"> (22)99786-1096 </a>
+      </div>
+      <div>
+        <p class="nome">Jeremias</p>
+        <a href="tel:22998096470"> (22)99809-6470 </a>
+      </div>
     </div>
   </div>
 </template>
@@ -22,5 +24,14 @@ export default {};
   margin-top: 40px;
 
   font-family: "josefin", sans-serif;
+}
+
+.contatos-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nome {
+  margin: 0;
 }
 </style>

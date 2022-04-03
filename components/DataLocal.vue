@@ -2,7 +2,7 @@
   <div class="wrapper-local">
     <div>
       <h2>É com grande alegria</h2>
-      <p>Que te convidamos para nossa celebração de Casaaaaaaamento!</p>
+      <p>Que te convidamos para nossa celebração de Casamento!</p>
     </div>
     <div class="data-local">
       <div>
@@ -10,7 +10,7 @@
         <div class="calendario-wrapper">
           <div class="calendario">
             <h3 class="dia">31</h3>
-            <p class="mes">de julho</p>
+            <p class="mes">Julho</p>
           </div>
         </div>
       </div>
@@ -68,8 +68,6 @@ export default {
 
   width: 100vw;
   padding: 20px 0;
-
-  font-family: "josefin", sans-serif;
 }
 
 .calendario-wrapper {
@@ -112,6 +110,13 @@ export default {
   height: 242px;
   object-fit: cover;
   margin-top: 20px;
+}
+
+h2,
+h3,
+p,
+a {
+  font-family: "josefin", sans-serif;
 }
 
 @media screen and (min-width: 800px) {

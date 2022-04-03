@@ -12,13 +12,17 @@
       />
     </b-form-group>
 
-    <div class="check">
-      <b-form-checkbox v-model="checked" name="check-button" switch>
-        Sim, estarei lá
-      </b-form-checkbox>
+    <div class="novo-nome">
+      <b-form-group label-for="name" class="name">
+        <b-form-input
+          id="name"
+          v-model="form.name"
+          type="text"
+          placeholder="Nome"
+          required
+        />
+      </b-form-group>
     </div>
-
-    <div id="novo-nome"></div>
 
     <b-button
       type=""
@@ -26,7 +30,7 @@
       class="btn-outros"
       @click="otherPeople"
     >
-      Confirmar outra presença
+      Confirmar presença de outra pessoa
     </b-button>
 
     <b-button
@@ -35,48 +39,43 @@
       class="btn-submit"
       @click="onSubmit"
     >
-      Confirmar
+      Confirmar presença
     </b-button>
   </div>
 </template>
 <script>
-// const novoNome = this.$el.querySelector("#novo-nome").value;
-
 export default {
   data() {
     return {
       form: {
         name: "",
-        age: "",
-        checked: true,
       },
-      checked: false,
     };
   },
   methods: {
     onSubmit() {
       console.log("On Submit");
       this.form.name = "";
-      this.form.age = "";
-      this.form.checked = "";
     },
-    otherPeople() {
-      // const inputname = "novo nome";
-      // novoNome.innerHTML = inputname;
-      // renderizar campo de nome outra vez
+    otherPeople(elemento) {
+      elemento.style.display = "block";
     },
   },
 };
 </script>
 
 <style lang="css">
+.novo-nome {
+  display: none;
+}
+
 .form {
   text-align: center;
   font-family: "josefin", sans-serif;
 
   display: flex;
   flex-direction: column;
-  padding: 40px 10px 0;
+  padding: 60px 10px 20px;
 }
 .btn-submit,
 .btn-submit:after {
