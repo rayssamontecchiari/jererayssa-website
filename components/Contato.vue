@@ -20,5 +20,7 @@ export default {};
 .contato-wrapper {
   text-align: center;
   margin-top: 40px;
+
+  font-family: "josefin", sans-serif;
 }
 </style>

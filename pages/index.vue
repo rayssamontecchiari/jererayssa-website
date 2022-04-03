@@ -2,11 +2,17 @@
   <div>
     <Banner />
     <Data-local />
-    <img src="../css/images/line.png" alt="" class="divisoria" />
+    <div class="divisoria">
+      <img src="../css/images/line.png" alt="" />
+    </div>
     <Form />
-    <img src="../css/images/line.png" alt="" class="divisoria" />
+    <div class="divisoria">
+      <img src="../css/images/line.png" alt="" />
+    </div>
     <Presentes />
-    <img src="../css/images/line.png" alt="" class="divisoria" />
+    <div class="divisoria">
+      <img src="../css/images/line.png" alt="" />
+    </div>
     <Contato />
   </div>
 </template>
@@ -24,7 +30,19 @@ body {
 }
 
 .divisoria {
-  max-width: 100%;
-  margin-top: 40px;
+  width: 100%;
+  margin: 40px 0 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.divisoria img {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+a {
+  color: black;
 }
 </style>

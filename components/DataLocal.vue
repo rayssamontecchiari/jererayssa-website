@@ -4,27 +4,29 @@
       <h2>É com grande alegria</h2>
       <p>Que te convidamos para nossa celebração de Casaaaaaaamento!</p>
     </div>
-    <div>
-      <p>Será no dia..</p>
-      <div class="calendario-wrapper">
-        <div class="calendario">
-          <h3 class="dia">31</h3>
-          <p class="mes">julho</p>
+    <div class="data-local">
+      <div>
+        <p>Será no dia..</p>
+        <div class="calendario-wrapper">
+          <div class="calendario">
+            <h3 class="dia">31</h3>
+            <p class="mes">de julho</p>
+          </div>
         </div>
       </div>
-      <!-- <b-calendar
-        id="ex-disabled-readonly"
-        :disabled="disabled"
-        :readonly="readonly"
-      ></b-calendar> -->
-    </div>
-    <div class="mapa-wrapper">
-      <p>E no sítio Recanto da Saudade</p>
-      <img
-        class="mapa"
-        src="../css/images/mapa-estatico.jpeg"
-        alt="Local do sítio"
-      />
+      <div class="mapa-wrapper">
+        <a
+          href="https://www.google.com/maps/place/S%C3%ADtio+Recanto+da+Saudade/@-22.2566624,-42.4740366,17z/data=!4m13!1m7!3m6!1s0x0:0x9fbcc6d4c9629b25!2zMjLCsDE1JzI0LjAiUyA0MsKwMjgnMTguNyJX!3b1!8m2!3d-22.2566624!4d-42.4718479!3m4!1s0x97f3c2638a24e5:0x3cc171120c2d2959!8m2!3d-22.2561288!4d-42.4707382?hl=pt-BR"
+          >E no sítio Recanto da Saudade</a
+        >
+        <a
+          href="https://www.google.com/maps/place/S%C3%ADtio+Recanto+da+Saudade/@-22.2566624,-42.4740366,17z/data=!4m13!1m7!3m6!1s0x0:0x9fbcc6d4c9629b25!2zMjLCsDE1JzI0LjAiUyA0MsKwMjgnMTguNyJX!3b1!8m2!3d-22.2566624!4d-42.4718479!3m4!1s0x97f3c2638a24e5:0x3cc171120c2d2959!8m2!3d-22.2561288!4d-42.4707382?hl=pt-BR"
+          ><img
+            class="mapa"
+            src="../css/images/sitio.jpeg"
+            alt="Local do sítio"
+        /></a>
+      </div>
     </div>
   </div>
 </template>
@@ -57,12 +59,6 @@ export default {
 </script>
 
 <style>
-.b-calendar-grid-help,
-.b-calendar-nav,
-.b-calendar-header {
-  display: none !important;
-}
-
 .wrapper-local {
   display: flex;
   flex-direction: column;
@@ -72,6 +68,8 @@ export default {
 
   width: 100vw;
   padding: 20px 0;
+
+  font-family: "josefin", sans-serif;
 }
 
 .calendario-wrapper {
@@ -79,6 +77,9 @@ export default {
   border-radius: 5px;
   padding-top: 15px;
   background: rgb(165, 115, 165);
+  display: block;
+  width: 150px;
+  margin: 0 auto;
 }
 
 .calendario {
@@ -110,5 +111,18 @@ export default {
   width: 268px;
   height: 242px;
   object-fit: cover;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .data-local {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: flex-start;
+  }
+  .mapa-wrapper {
+    margin-top: 0px;
+  }
 }
 </style>

@@ -72,6 +72,7 @@ export default {
 <style lang="css">
 .form {
   text-align: center;
+  font-family: "josefin", sans-serif;
 
   display: flex;
   flex-direction: column;
